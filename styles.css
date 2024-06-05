@@ -28,6 +28,8 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    margin-left:8px;
+    font-size:30px;
 }
 
 .todo-app h2 img {
@@ -114,5 +116,8 @@ ul li span{
 }
 ul li span:hover{
     color:white;
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius:25px;
+
     transform: scale(1.5);
 }

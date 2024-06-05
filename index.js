@@ -15,11 +15,13 @@ document.getElementsByClassName("btn")[0].addEventListener("click",()=>{
     inputBox.value = '';
 });
 listcontainer.addEventListener("click",(e)=>{
-    if(e.target.tagName === "LI"){ // value ke ot sov cbas
+    if(e.target.nodeName === "LI"){ // value ke ot sov cbas
         e.target.classList.toggle("checked");
+        console.log(e);
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
+        console.log(e);
     }
 })
 
