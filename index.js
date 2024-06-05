@@ -13,15 +13,25 @@ document.getElementsByClassName("btn")[0].addEventListener("click",()=>{
         li.appendChild(span);
     }
     inputBox.value = '';
+    saveData();
 });
 listcontainer.addEventListener("click",(e)=>{
     if(e.target.nodeName === "LI"){ // value ke ot sov cbas
         e.target.classList.toggle("checked");
         console.log(e);
+        saveData();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
         console.log(e);
+        saveData();
     }
 })
 
+function saveData(){
+    localStorage.setItem("data",listcontainer.innerHTML)
+}
+function showTask(){
+    listcontainer.innerHTML = localStorage.getItem("data");
+}
+showTask();
