@@ -10,21 +10,21 @@
     width: 100%;
     height: 100vh;
     padding: 10px;
-    background-image: linear-gradient(145deg, #543310, #F8F4E1);
+    background-image: linear-gradient(145deg, #3AA6B9, #F8F4E1);
 }
 
 .todo-app {
     width: 100%;
     max-width: 540px;
     margin: 100px auto 20px;
-    background-image: linear-gradient(145deg, #ffffff, #f8f4e1b9);
+    background-image: linear-gradient(180deg, #FF9EAA, #FFD0D0);
     padding: 40px 30px 70px;
     border-radius: 10px;
 
 }
 
 .todo-app h2 {
-    color: #74512D;
+    color: #7469B6;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #e2e2de;
+    background: #ffffff;
     padding-left: 20px;
     margin-bottom: 25px;
     border-radius: 20px;
@@ -60,11 +60,11 @@ button {
     border: none;
     outline: none;
     padding: 12px 50px;
-    background-color: #0e4aa5b2;
+    background-color: #F9F9E0;
     cursor: pointer;
     font-size: 18px;
     border-radius: 40px;
-    color: rgba(255, 255, 255, 0.781);
+    color: rgba(0, 0, 0, 0.781);
 }
 
 ul li {
@@ -120,4 +120,10 @@ ul li span:hover{
     border-radius:25px;
 
     transform: scale(1.5);
+}
+#input-box{
+    color:#7469B6;
+}
+li{
+    color:#7469B6;
 }
